@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Navigation menu */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 400px;
+      background-image: url("banner.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: blur(1px);
+      }
+    
+    h1{
+        text-align: center;
+    }
+
+    /* Main content sections */
+    .section {
+      padding: 50px;
+      text-align: center;
+    }
+    
+    /* Featured content */
+    .featured {
+      background-color: #f9f9f9;
+    }
+    
+    /* Recent updates */
+    .updates {
+      background-color: #e1e1e1;
+    }
+    
+    /* Upcoming events */
+    .events {
+      background-color: #f9f9f9;
+    }
+    
+    /* Card styles */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .card p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    
+    .card .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    /* Responsive layout */
+    @media screen and (max-width: 900px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .section {
+        padding: 20px;
+      }
+      
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation menu -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Events</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Banner -->
+  <div class="banner">
+  <h1>Worlds leading Tech Community !</h1>
+    
+  </div>
+  
+  <!-- Featured content section -->
+  <div class="section featured">
+    <h2>Featured Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+  </div>
+  
+ <!-- Recent updates section -->
+<div class="section updates">
+  <h2>Recent Updates</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="update1.jpg" alt="Update 1">
+      <h3>Update 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <img src="update1.jpg" alt="Update 2">
+      <h3>Update 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <img src="update1.jpg" alt="Update 3">
+      <h3>Update 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</div>
+
+ <!-- Recent updates section -->
+<div class="section updates">
+  <h2>Upcoming Events</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="update1.jpg" alt="Update 1">
+      <h3>Event 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <img src="update1.jpg" alt="Update 2">
+      <h3>Event 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="card">
+      <img src="update1.jpg" alt="Update 3">
+      <h3>Event 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis nisi non est commodo dapibus.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
